@@ -1,6 +1,6 @@
 {
-  "name": "Instagram as Progressive Web App",
-  "short_name": "PWAGram",
+  "name": "News as Progressive Web App",
+  "short_name": "PWANews",
   "icons": [
     {
       "src": "/images/icons/app-icon-48x48.png",
