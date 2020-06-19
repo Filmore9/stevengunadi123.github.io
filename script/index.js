@@ -20,7 +20,7 @@ fetch(urlTrending,{
 .then(function(d){
     for(var i = 0; i<12;i++){
 
-             document.getElementById("newsResults").innerHTML += "<div class='col l2'><div class='card-content'><span class='card-title activator'></span><h6 class='truncate'>Title: <a href="+d.articles[i].link+" title="+d.articles[i].title+">"+d.articles[i].title+"</a></h6><p><b>Author</b>:" +d.articles[i].author+" </p><p><b>News source</b>:"+d.articles[i].topic+" </p><p><b>Published</b>:" +d.articles[i].published_date+ "</p></div><div class='card-reveal'><span class='card-title'></span><p><b>Description</b>:" +d.articles[i].summary+"</p></div><div class='card-action'><a href="+d.articles[i].link+" target='_blank' class='btn'>Read More</a></div></div></div>";
+             document.getElementById("newsResults").innerHTML += "<div class='col l2'><div class="row"><div class='card-content'><span class='card-title activator'></span><h6 class='truncate'>Title: <a href="+d.articles[i].link+" title="+d.articles[i].title+">"+d.articles[i].title+"</a></h6><p><b>Author</b>:" +d.articles[i].author+" </p><p><b>News source</b>:"+d.articles[i].topic+" </p><p><b>Published</b>:" +d.articles[i].published_date+ "</p></div><div class='card-reveal'><span class='card-title'></span><p><b>Description</b>:" +d.articles[i].summary+"</p></div><div class='card-action'><a href="+d.articles[i].link+" target='_blank' class='btn'>Read More</a></div></div></div>";
     }
 })
 
