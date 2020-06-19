@@ -1,3 +1,13 @@
+navigator.serviceWorker.register('/sw.js');
+
+var deferredPrompt;
+window.addEventListener('beforeinstallprompt', function(event) {
+  console.log('beforeinstallprompt fired');
+  event.preventDefault();
+  deferredPrompt = event;
+  return false;
+});
+
 const urlTrending = "https://covid-19-news.p.rapidapi.com/v1/covid?lang=en&q=covid";
 fetch(urlTrending,{
     "method": "GET",
